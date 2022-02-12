@@ -35,13 +35,13 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/cs34
     <tool name="VHDL Entity">
       <a name="content">--------------------------------------------------------------------------------
 -- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains
--- Project :
--- File    :
--- Autor   :
--- Date    :
+-- Project : RISC-V CPU
+-- File    : cpu.circ
+-- Autor   : Quintana Guillermo
+-- Date    : 10/02/2022
 --
 --------------------------------------------------------------------------------
--- Description :
+-- Description : RISC-V based CPU using CS3410 components. 
 --
 --------------------------------------------------------------------------------
 

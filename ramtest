@@ -1,0 +1,32 @@
+addi x5, x0, 7
+addi x6, x0, 4
+add  x7, x5, x6
+sub  x8, x5, x6
+and  x9, x8, x5
+andi x10, x7, 9
+or   x11, x6, x10
+ori  x12, x11, 3
+label1:
+addi x6, x6, 1
+sw x6, 1(x1)
+bne x6, x5, label1
+beq x6, x5, label2
+add  x7, x10, x6
+sub  x8, x10, x6
+and  x9, x10, x5
+label2:
+blt x8, x6, label3
+bge x8, x6, label3
+sw  x1, 5(x3)
+lw  x1, 3(x3)
+addi x1, x0, 22
+addi x2, x0, 13
+addi x3, x0, 420
+label3:
+sw  x7, 2(x1)
+sw  x8, 3(x1)
+sw  x9, 4(x1)
+lw  x2, 2(x1)
+lw  x3, 3(x1)
+lw  x4, 4(x1)
+
